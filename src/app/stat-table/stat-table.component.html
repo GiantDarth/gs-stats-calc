@@ -1,0 +1,11 @@
+<table class="stat-table" *ngFor="let category of categories">
+    <thead><tr><th colspan="3">{{category.name}} Statistics</th></tr></thead>
+
+    <tbody>
+        <tr *ngFor="let stat of category.stats" [class.selected]="stat === selectedStat" (click)="onSelect(stat)">
+            <td class="stat-name">{{stat.name}}</td>
+            <td>{{stat.toRank()}}</td>
+            <td>{{stat.value}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+.stat-table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: black;
+
+    /* display: inline-block;
+    margin: 0.25em 1em; */
+    text-align: left;
+    /* vertical-align: top; */
+
+    flex: 1 1 auto;
+
+    thead th {
+        border-style: ridge;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    tbody {
+        tr {
+            cursor: pointer;
+        }
+
+        td {
+            border-style: ridge;
+            padding: 0.5em;
+        }
+    }
+
+    .stat-name {
+        text-align: center;
+    }
+}

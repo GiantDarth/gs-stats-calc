@@ -1,0 +1,70 @@
+<div class="app">
+    <div class="header-box"><h1 class="title">{{ title }}</h1></div>
+    
+    <div class="main-box">
+        <div class="left-box">
+            <app-stat-table class="stat-table-box" (statSelectedEvent)="updateSelectedStat($event)"></app-stat-table>
+            <app-stat-editor class="stat-editor-box" [stat]="selectedStat"></app-stat-editor>
+        </div>
+    
+        <div class="right-box">
+            <pre class="output">
+//----------------------------------------------
+Physical Stats
+//----------------------------------------------
+
+Strength: F (2)
+Dexterity:B (11)
+Agility: -- (0)
+Speed: F (2)
+Endurance: EX:B- (28)
+Vitality: B (11)
+Appeal: B- (10)
+Weapons: D (5)
+Armor: D (5)
+
+//----------------------------------------------
+Mental Stats
+//----------------------------------------------
+
+Intelligence: S+ (18)
+Intuition: B (11)
+Perception: A (14)
+Impulse: C (8) 
+Empathy: C (8) 
+Charisma: B (11)
+Willpower: EX:B- (28)
+Science Adaptation: A (14)
+Occult Adaptation: F (2)
+
+//----------------------------------------------
+Mystical Stats
+//----------------------------------------------
+
+Focus: -- (0)
+Channeling:-- (0)
+Sense: -- (0)
+Aura: -- (0)
+Well: -- (0)
+Bond: -- (0)
+Barrier: EX:B- (28)
+Flow: -- (0)
+Clarity: -- (0)
+
+Total: Balanced</pre>
+        </div>
+    </div>
+
+    <!-- <ul>
+        <li *ngFor="let category of categories">
+            <div>{{category.name}}</div>
+            <ul>
+                <li *ngFor="let stat of category.stats">
+                    {{stat.name}} {{stat.value}}
+                </li>
+            </ul>
+            
+        </li>
+    </ul> -->
+<!-- </div> -->
+</div>

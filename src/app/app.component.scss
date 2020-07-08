@@ -1,0 +1,89 @@
+.app {
+    padding: 0.5em;
+
+    color: orange;
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.main-box {
+    display: flex;
+    flex: 1;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header-box {
+    flex-basis: 100%;
+}
+
+.left-box {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.stat-table-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.stat-editor-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-box {
+    // flex-basis: 100%;
+    flex: 0 0 auto;
+}
+
+.title {
+    text-align: center;
+    background-color: black;
+    border-style: inset;
+    padding: 0.25em;
+    flex-basis: 100%;
+}
+
+// .body-box {
+//     display: flex;
+
+//     flex-direction: row;
+//     // flex-wrap: nowrap;
+//     // flex-basis: auto;
+
+//     justify-content: space-between;
+//     // align-content: stretch;
+//     align-items: flex-start;
+    
+// }
+
+.output {
+    background-color: black;
+    margin: auto;
+    border: inset;
+    padding: 0.75em 1.25em 0.75em 0.75em;
+    overflow: auto;
+
+    flex: 1 auto auto;
+
+    // width: 0ch;
+}

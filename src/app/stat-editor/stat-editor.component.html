@@ -1,0 +1,13 @@
+<div [formGroup]="statGroup" *ngIf="stat">
+    <label>{{stat.name}}</label>
+    <select formControlName="rank" (change)="onRankChange($event.target.value)">
+        <option *ngFor="let rank of RANKS">{{rank}}</option>
+    </select>
+
+    <input type="number" formControlName="value" (change)="onValueChange($event.target.value)" min="0" max="38" />
+</div>
+
+<div>
+    Total: {{ this.getTotal() }}
+    Offset: {{ this.getOffset() }}
+</div>
